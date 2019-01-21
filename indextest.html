@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>playground</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body style="font-family: product sans; height:1000px;">
+	<header>
+
+		<div class="header">
+			<!-- <button type="submit" class="dis-button"> <i class="fa fa-bars"></i></button> -->
+			<center> <a href="#" style="text-align: center;"> <img class="header-img" src="./images/logo1.svg"></a>
+				</a></center>
+		</div>
+
+	</header>
+	<nav>
+		<div id="sideNav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<ul>
+				<li> <a class="active" class="sidebar" href="#home">Home</a></li>
+				<li> <a href="./pages/venue.html">Venue</a></li>
+				<li> <a href="#">Sports</a></li>
+				<li> <a href="#">About Us</a></li>
+				<li> <a href="./pages/login_signup.html">Login</a></li>
+				<li> <a href="./pages/login_signup.html">Signup</a></li>
+			</ul>
+		</div>
+		<!-- <div class="sidebar">
+			<a class="active" class="sidebar" href="#home">Home</a>
+			<a href="./pages/venue.html">Venue</a>
+			<a href="#">Sports</a>
+			<a href="#">About Us</a>
+			<a href="./pages/login_signup.html">Login</a>
+			<a href="./pages/login_signup.html">Signup</a>
+		</div> -->
+
+
+
+	</nav>
+	<button class="sidespan" onclick="openNav()">&#9776;</button>
+	<main>
+
+		<div>
+			<h1>List of sports</h1>
+			<div class="row1">
+				<div class="column1">
+					<a href="./pages/details.html">
+						<div class="card">
+							<img class="img-icon" src="images/crick1.jpg" alt="crick_image">
+							<h2 style="padding-left: 15px; color:black">Cricket <i class="fa fa-angle-double-right"></i></h2>
+						</div>
+					</a>
+				</div>
+				<div class="column1">
+					<div class="card">
+						<img class="img-icon" src="images/football1.jpg" alt="crick_image">
+
+						<h2 style="padding-left: 15px;">Football <i class="fa fa-angle-double-right"></i></h2>
+
+					</div>
+				</div>
+				<div class="column1">
+					<div class="card">
+						<img class="img-icon" src="images/tenn.jpeg" alt="crick_image">
+
+						<h2 style="padding-left: 15px;">Tennis <i class="fa fa-angle-double-right"></i></h2>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<h5 style="color: blanchedalmond">&copy;2019 </h5>
+			</div>
+		</footer>
+	</main>
+
+
+	<script>
+		function openNav() {
+			var x = document.getElementById("sideNav");
+			x.style.width = "280px";
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none ";
+
+			}
+		}
+
+		function closeNav() {
+			document.getElementById("sideNav").style.width = "0";
+		}
+	</script>
+</body>
+
+</html>

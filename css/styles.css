@@ -1,0 +1,600 @@
+/* *{
+   border: 1px solid red; }   */
+
+
+
+
+body {
+    margin: 0%;
+    min-height: 100%;
+    background-color: rgb(34, 36, 49);
+    color: white;
+}
+
+.column1 {
+    width: 30%;
+    margin-left: 10px;
+    float:left;
+}
+
+h1,
+h3,
+h4,
+h2,
+img,
+p {
+    padding-left: 10px;
+    color: white;
+}
+
+h3 a {
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+div {
+    display: block;
+    padding-bottom: 0%;
+}
+
+.header {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(34, 36, 49);
+    position: 100%;
+}
+
+.header-img {
+
+    width: 300px;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 5px;
+    background-image: "images/logo.png";
+}
+
+.header a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 50px;
+}
+
+.header a.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+
+.header a.activated {
+    background-color: rgb(73, 73, 73);
+    border-color: rgb(87, 101, 112);
+    border-width: 10%;
+    border-radius: 20px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+
+.header-right {
+    float: right;
+}
+
+.div-card {
+    margin-left: 21;
+}
+
+.img-icon {
+    padding: 0%;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(65, 65, 65, 0.801);
+    transition: 0.3s;
+    float: left;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 25px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+
+.row1 {
+    margin: 0 -5px;
+    float: left;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 500px;
+
+}
+
+.sidespan {
+    display: none;
+}
+
+.sidenav {
+    display: block;
+}
+
+@media screen and (max-height: 1365px) {
+    .sidenav {
+        display: block;
+    }
+ 
+}
+ 
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        margin: 0;
+        width: 0;
+        background-color: rgb(34, 36, 49);
+        background-image: url("./imges/logo.png");
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+        text-align: justify;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 145px;
+        margin-top: 50px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+    .sidespan {
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        padding-left: 15px;
+    }
+
+    .header-img {
+
+        width: 200px;
+        height: 40px;
+        padding-top: 5px;
+        /* background-image: "images/logo.png"; */
+    }
+}
+
+img {
+    width: 266px;
+    height: 196px;
+    border-radius: 5px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(158, 155, 155);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.container {
+    padding: 10px 16px;
+}
+
+label {
+    color: black;
+}
+
+.card-login {
+    width: 40%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgb(243, 243, 243);
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-right: 100px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.field {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(94, 94, 94);
+    outline: none;
+    transition: transform 0.1s;
+    border-radius: 10px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    color: black;
+    -webkit-transition: transform 0.1s;
+    -moz-transition: transform 0.1s;
+    -ms-transition: transform 0.1s;
+    -o-transition: transform 0.1s;
+}
+
+.field:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.button-style {
+    color: #ccc;
+    background-color: rgb(250, 17, 17);
+    box-shadow: 0 4px 8px 0 rgba(65, 65, 65, 0.801);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    font-family: product sans;
+    font-size: 18px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.button-style:hover {
+    background-color: rgb(23, 158, 18);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    color: beige;
+}
+
+a {
+    color: black;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: rgb(34, 36, 49);
+    background-image: url("./imges/logo.png");
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    text-align: justify;
+    /* /* display: none; */
+
+}
+
+.sidebar a {
+    display: block;
+    color: whitesmoke;
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: transform 0.1s;
+    -webkit-transition: transform 0.1s;
+    -moz-transition: transform 0.1s;
+    -ms-transition: transform 0.1s;
+    -o-transition: transform 0.1s;
+}
+
+.sidebar a.active {
+    border-color: rgb(63, 63, 133);
+    color: rgb(199, 193, 231);
+    border-width: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    transform: scale(1.5);
+    padding-left: 50px;
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+}
+
+.detail-image {
+    margin-left: 0%;
+}
+
+main {
+    height: 100%;
+    margin-left: 21%;
+    /* border-left: 2px solid white; */
+    /* border-left-style: solid; */
+    box-shadow: #ccc;
+    height: 500px;
+}
+
+.footer {
+    clear: both;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1rem;
+    background-color: rgb(50, 53, 71);
+    text-align: center;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+main p {
+    padding-right: 80px;
+    text-align: justify;
+}
+
+.paid {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.free {
+    background-color: rgb(36, 119, 17);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+@media screen and (max-width: 699px) {
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    .column1 {
+        width: 100%;
+        margin-left: -70px;
+        
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        /* display: none; */
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+    .header {
+        width: 200px;
+        height: 40px;
+    }
+
+    .sidespan {
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        margin-left: 15px;
+    }
+
+    .sfield {
+        display: inline;
+    }
+
+
+    input[type="search"] {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        font-size: 12px;
+    }
+
+    .sidebar ul {
+        text-decoration: none;
+
+    }
+
+    .sidebar a {
+        float: left;
+        padding: 15px;
+    }
+}
+
+
+.header a {
+    float: 50%;
+    display: block;
+    text-align: left;
+    padding: 0%;
+}
+
+.header-right {
+    float: none;
+}
+
+
+
+main p {
+    padding-right: 25px;
+    padding-left: 5px;
+    text-align: justify;
+}
+
+.card-login {
+    margin-right: 165px;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.row1 {
+    margin: 0%;
+}
+
+.header-img {
+    width: 182px;
+    height: 35px;
+}
+
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (max-width:1265px) {
+    .card-login {
+        width: 91%;
+    }
+
+    main {
+        margin-left: 33%;
+    }
+
+    .header a {
+        float: 50%;
+        display: block;
+        text-align: left;
+        padding: 0%;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    main {
+        margin-left: 17%;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        width: 0;
+    }
+
+    main {
+        margin-top: 3%;
+    }
+
+    .vl {
+        border-left: 0px;
+    }
+
+    main .card-login {
+        margin-left: -4%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    
+.column1 {
+    width: 100%;
+    margin-left: -30px;
+    margin-top: 25px;
+}
+   
+}
+
+
+
+  
